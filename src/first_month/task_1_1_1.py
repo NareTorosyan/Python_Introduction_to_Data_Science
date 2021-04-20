@@ -11,9 +11,11 @@ last_digit = int(n[len(n)-1])
 print(last_digit)
 
 #3Input a two-digit natural number and output the sum of its digits.
-n = 65
-m = 6+5
-m
+n = ab
+a=5
+b=7
+m = 1+b
+
 
 #4 You are given the first and second number in an arithmetic progression and natural number  n. Find n-th element of arithmetic progression.
 a= 5

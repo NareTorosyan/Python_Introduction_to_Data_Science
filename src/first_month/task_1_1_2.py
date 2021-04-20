@@ -13,8 +13,9 @@ s1
 
 #3Write a Python program to change a given string to a new string where the first and last chars have been exchanged.
 s = "Spring"
-s2 = s[-1] + s[1:5] + s[0]
-s2
+n = 5
+s4 = s[-1]+s[1:n]+s[0]
+s4
 
 
 #4Write a Python function to get a string made of 4 copies of the last two characters of a specified string
@@ -25,7 +26,8 @@ s3
 
 #1Write a Python program that make a list from given string
 s = "Spring"
-s4 = [s[0],s[1],s[2],s[3],s[4],s[5]]
+n = 6
+s4 = [s[0],s[n-1]]
 s4
 
 
@@ -39,7 +41,7 @@ x
 
 #3Write a Python program which add an element to the given list
 x = [1,2,3,4,5,6,7,8]
-x.insert(3,5)
+x.append(3)
 x
 
 
