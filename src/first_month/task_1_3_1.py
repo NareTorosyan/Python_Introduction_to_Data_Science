@@ -14,4 +14,4 @@ s = str(x)
 if s[0:n]== s[-n:]:
     print("True")
 else:
-    print("False
+    print("False")
