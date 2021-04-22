@@ -7,8 +7,7 @@ if x % y == 0:
     print("True")
 else:
     print("False")
-#2 Write a Python fu
-# nction, which gets a number, and return True if that number is palindrome, otherwise False
+#2 Write a Python function, which gets a number, and return True if that number is palindrome, otherwise False
 x = 16461
 n=5
 s = str(x)
