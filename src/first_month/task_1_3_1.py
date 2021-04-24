@@ -1,13 +1,13 @@
 
 
 #1 Write a Python function, which gets 2 numbers, and return True if the second number is first number divider, otherwise False.
-def new_function(a,b):
+def divider(a,b):
     if b % a==0:
         return True
     else:
         return False
-a = new_function(48,6)
-print(a)
+print(divider(48,6))
+
 
 num = 789
 s = str(num)
@@ -16,13 +16,13 @@ def palindrome(number):
         return True
     else:
         return False
-a = palindrome(num)
-print(s)
+print(palindrome(s))
+
 
 
 #3 Write a Python function, which gets a number, and return True if that number is prime, otherwise False.
 
-def new_function(x):
+def prime(x):
     if x<=1:
         return False
     for i in range(2,x):
@@ -30,8 +30,8 @@ def new_function(x):
             return False
         else:
             return True
-a = new_function(1)
-print(a)
+print(prime(1))
+
 
 #4Write a Python function, which checks if a number is perfect - that is equal to the sum of its proper positive divisors.
 
@@ -58,7 +58,6 @@ def GCD(number1, number2):
             if number1%i==0 and number2%i==0:
                 x = i
         return x
-
 print(GCD(5,6))
 
 
