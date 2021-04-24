@@ -6,14 +6,14 @@ for x in l:
 print(product)
 
 #2 Write a Python program to get the largest number from a list.
-#1
+#v1
 l = [3,8,2,9]
 max_number = 0
 for x in l:
     if x > max_number:
           max_number = x
 print(max_number)
-#2
+#v2
 l.sort()
 print(l[-1])
 
@@ -25,11 +25,13 @@ for x in range(1,31):
 print(l[5:])
 
 # 4Write a Python program to remove duplicates from a list
+#v1
 l1 = [1,2,2,3,4,5,6,3]
 l2 = []
 for x in l1:
     if x not in l2:
         l2.append(x)
+#v2
 print(l2)
 print(list(set(l1)))
 
