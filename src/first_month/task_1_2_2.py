@@ -3,15 +3,19 @@ l = [1, 2, 3, 4, 5, 6, 7]
 product = 1
 for x in l:
     product = product * x
-    print(product)
+print(product)
 
 #2 Write a Python program to get the largest number from a list.
+#1
 l = [3,8,2,9]
 max_number = 0
 for x in l:
     if x > max_number:
           max_number = x
-    print(x)
+print(max_number)
+#2
+l.sort()
+print(l[-1])
 
 
 #3Write a Python program to generate and print a list except for the first 5 elements, where the values are square of numbers between 1 and 30 (both included)
@@ -27,13 +31,16 @@ for x in l1:
     if x not in l2:
         l2.append(x)
 print(l2)
+print(list(set(l1)))
 
 #5 Write a Python program to find the most appeared element in a list.
-l = [1, 2, 2, 3, 3, 3, 4, 5, 6, 3, 3]
+l = [1, 2, 2, 3, 3, 3, 4, 5, 6, 3, 3,7]
 count = 0
+most_appeared_elem = 1
 for x in l:
     freq = l.count(x)
     if (freq > count):
         count = freq
+        most_appeared_elem = x
 
-print(x)
+print(most_appeared_elem)
