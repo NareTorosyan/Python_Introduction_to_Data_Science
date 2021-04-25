@@ -48,6 +48,7 @@ for i,j in d1.items():
     for x,y in d2.items():
         if i==x:
            d3[i] = j + y
+print(d3)
 
 # 7 Write a python program which create dict from string, where keys are letters of  string, values are counts of letters in string
 d = {}
