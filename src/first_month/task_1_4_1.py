@@ -41,7 +41,7 @@ for x in list_of_num:
 print(sample_set)
 
 
-#7 Write a python python program, which return list from given set, where each element of list, is equal to cub of set element
+#7 Write a python  program, which return list from given set, where each element of list, is equal to cub of set element
 l=[]
 s={3,5,7,11,13}
 for x in s:
