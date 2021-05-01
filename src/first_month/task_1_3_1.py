@@ -33,6 +33,8 @@ def prime(x):
 print(prime(1))
 
 
+
+
 #4Write a Python function, which checks if a number is perfect - that is equal to the sum of its proper positive divisors.
 
 def perfect(number):
