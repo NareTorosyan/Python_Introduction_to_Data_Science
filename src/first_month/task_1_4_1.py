@@ -46,20 +46,23 @@ print(total(l1,l2))
 
 #6 Write  python function which get set and element value, and remove from set element with given value if exist
 sample_set = {3,5,7,11,13}
-list_of_num = [10, 11, 12, 13, 14,3]
-def remove(s,l):
-    for x in l:
-        s.add(x)
+def remove(s,a):
+    for x in s:
+        if a==x:
+           return s.remove(x)
+        else:
+            return s
     return s
-print(remove(sample_set,list_of_num))
+print(remove(sample_set,7))
 
 
 
 #7 Write a python  program, which return list from given set, where each element of list, is equal to cub of set element
-list=[]
+
 sample={3,5,7,11,13}
-def cub(l,s):
+def cub(s):
+    list = []
     for x in s:
-        l.append(x**3)
-    return l
-print(cub(list,sample))
+        list.append(x**3)
+    return list
+print(cub(sample))
