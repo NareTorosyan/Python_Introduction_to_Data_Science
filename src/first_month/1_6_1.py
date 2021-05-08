@@ -14,5 +14,8 @@ class Rational:
             return "Denumerator must be non-zero value"
         else:
            return Rational(numerator,denumerator)
+
 obj1 = Rational(10,5)
+print(obj1)
 print(obj1.normalize())
+
