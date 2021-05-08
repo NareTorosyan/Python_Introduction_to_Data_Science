@@ -8,8 +8,8 @@ class Money:
         sum = self.__amount+obj3.__amount
         cur = self.__currency
         return Money(sum,cur)
-    def __sub__(self,obj3):
-        sub = self.__amount-obj3.__amount
+    def __div__(self,obj4):
+        sub = self.__amount-obj4.__amount
         cur = self.__currency
         if sub<0:
             return "amount can't be negative number"

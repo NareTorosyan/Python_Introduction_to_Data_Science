@@ -6,7 +6,7 @@ def Euler(x):
     l=[]
     for i in range(1,x):
         if gcd(x,i)==1:
-           l.append(i)
+               l.append(i)
     return len(l)
 
 
