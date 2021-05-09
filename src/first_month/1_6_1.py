@@ -9,14 +9,9 @@ class Rational:
 
     def __repr__(self):
             return f"{self.__numerator},{self.__denumerator}"
-    @staticmethod
+
     def normalize(self,numerator,denumerator):
         x = gcd(numerator,denumerator)
         return numerator//x, denumerator//x
-
-obj1 = Rational(8,4)
+obj1 = Rational(10,5)
 print(obj1)
-
-
-
-
