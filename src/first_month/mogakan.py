@@ -8,7 +8,7 @@ class Money:
         sum = self.__amount+obj3.__amount
         cur = self.__currency
         return Money(sum,cur)
-    def __div__(self,obj4):
+    def __sub__(self,obj4):
         sub = self.__amount-obj4.__amount
         cur = self.__currency
         if sub<0:
