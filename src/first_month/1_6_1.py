@@ -7,7 +7,7 @@ class Rational:
     def __repr__(self):
             return f"{self.__numerator},{self.__denumerator}"
 
-    def normalize(self):
+    def normalize(self,numerator,denumerator):
         numerator = self.__numerator//gcd(numerator,denumerator)
         denumerator =self.__denumerator//gcd(numerator,denumerator)
         if denumerator==0:
@@ -17,5 +17,5 @@ class Rational:
 
 obj1 = Rational(10,5)
 print(obj1)
-print(obj1.normalize())
+print(obj1.normalize(10,5))
 
