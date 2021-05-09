@@ -10,6 +10,6 @@ n= - 100
 try:
     if n < 0:
         raise MoneyException("Negative Value",n)
-except MoneyException:
-    MoneyException.print_obj()
+except MoneyException as me:
+    me.print_obj()
 
