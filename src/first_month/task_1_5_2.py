@@ -6,17 +6,19 @@ class MoneyException(Exception):
 
     def print_obj(self):
         print(self.__message,self.__amount)
-n= - 100
-try:
-    if n < 0:
-        raise MoneyException("Negative Value",n)
-except MoneyException as me:
-    me.print_obj()
 
 class Money:
     def __init__(self,am,currency):
         self.__amount=am
         self.__currency =currency
+
+    n = 100
+    try:
+        if n < 0:
+            raise MoneyException("Negative Value", n)
+    except MoneyException as me:
+        me.print_obj()
+
     def __repr__(self):
         return f"{self.__amount},{self.__currency}"
     def __add__(self,obj3):
