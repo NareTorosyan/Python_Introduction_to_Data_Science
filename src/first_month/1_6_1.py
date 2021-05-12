@@ -26,16 +26,59 @@ class Rational:
     def __repr__(self):
         return f"{self.__numerator},{self.__denominator}"
 
-    def __mul__(self, obj3):
-        num = self.__numerator * obj3.__numerator
+    def __add__(self, obj3):
+        num = (self.__numerator * obj3.__denominator)+(self.__denominator * obj3.__numerator)
         denom = self.__denominator * obj3.__denominator
         return Rational(num, denom)
 
-    def __truediv__(self, obj4):
-        num = self.__numerator * obj4.__denominator
-        denom = self.__denominator * obj4.__numerator
+    def __sub__(self, obj4):
+        num = (self.__numerator * obj4.__denominator) - (self.__denominator * obj4.__numerator)
+        denom = self.__denominator * obj4.__denominator
         return Rational(num, denom)
 
+    def __mul__(self, obj5):
+        num = self.__numerator * obj5.__numerator
+        denom = self.__denominator * obj5.__denominator
+        return Rational(num, denom)
+
+
+    def __truediv__(self, obj6):
+        num = self.__numerator * obj6.__denominator
+        denom = self.__denominator * obj6.__numerator
+        return Rational(num, denom)
+
+    def __gt__(self, obj7):
+        num1 = self.__numerator * obj7.__denominator
+        num2 = self.__denominator * obj7.__numerator
+        return num1>num2
+
+    def __eq__(self, obj7):
+        num1 = self.__numerator * obj7.__denominator
+        num2 = self.__denominator * obj7.__numerator
+        return num1==num2
+
+    def __lt__(self, obj8):
+        num1 = self.__numerator * obj8.__denominator
+        num2 = self.__denominator * obj8.__numerator
+        return num1<num2
+
+
+    def __ge__(self, obj9):
+        num1 = self.__numerator**obj9.__denominator
+        num2 = self.__denominator**obj9.__denominator
+        return num1>=num2
+
+
+    def __le__(self, obj10):
+        num1 = self.__numerator * obj10.__denominator
+        num2 = self.__denominator * obj10.__numerator
+        return num1<=num2
+
+
+    def __pow__(self, obj11):
+        num = self.__numerator ** obj11.__denominator
+        denom = self.__denominator ** obj11.__numerator
+        return Rational(num, denom)
 
     def get_numerator(self):
         return self.__numerator
@@ -83,15 +126,24 @@ class Rational:
     def normalize(self,numerator,denominator):
         x = self.gcd(numerator,denominator)
         return numerator//x, denominator//x
-obj1 = Rational(10,5)
-print(obj1)
-
-
-
+obj = Rational(10,5)
+print(obj)
 
 obj1 = Rational (3, 5)
 obj2 = Rational (4, 3)
-obj3 = obj1 * obj2
-obj4 = obj1/obj2
+obj3 = obj1+obj2
+obj4 = obj2-obj1
+obj5 = obj1*obj2
+obj6 = obj2/obj1
+obj11 = obj1**obj2
 print(obj3)
 print(obj4)
+print(obj5)
+print(obj6)
+print(obj1>obj2)
+print(obj1==obj2)
+print(obj1<obj2)
+print(obj1>=obj2)
+print(obj1<=obj2)
+print(obj1**obj2)
+
