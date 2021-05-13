@@ -42,6 +42,7 @@ class Rational:
         return Rational(num, denom)
 
 
+
     def __truediv__(self, obj6):
         num = self.__numerator * obj6.__denominator
         denom = self.__denominator * obj6.__numerator
@@ -125,8 +126,11 @@ class Rational:
 
     def normalize(self,numerator,denominator):
         x = self.gcd(numerator,denominator)
+        print(x)
         return numerator//x, denominator//x
-obj = Rational(10,5)
+
+
+obj = Rational(14,2)
 print(obj)
 
 obj1 = Rational (3, 5)
