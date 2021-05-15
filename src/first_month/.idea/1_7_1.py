@@ -24,9 +24,9 @@ class Student(Person):
         self.__middle_score=middle_score
     def __repr__(self):
         super().__repr__()
-        return f"{self.__name},{self.__surname},{self.__age},{self.__gender},{self.__university},{self.__faculty},{self.__course},{self.__middle_score}"
+        return f"{self.__university},{self.__faculty},{self.__course},{self.__middle_score}"
 
-obj1 = Student("Nare","Torosyan",26,"female","YSU","Mathematics","Algebra",4)
+obj1 = Student("YSU","Mathematics","Algebra",4)
 print(obj1)
 
 
@@ -70,8 +70,8 @@ class Teacher(Person):
         self.__salary=salary
     def __repr__(self):
         super().__repr__()
-        return f"{self.__name},{self.__surname},{self.__age},{self.__gender},{self.__discipline},{self.__faculty},{self.__university},{self.__experience}"
+        return f"{self.__discipline},{self.__faculty},{self.__university},{self.__experience}"
 
-obj2 = Teacher("Nare","Torosyan",26,"female","good","Mathematics","YSU",4)
+obj2 = Teacher("good","Mathematics","YSU",4)
 print(obj2)
 
