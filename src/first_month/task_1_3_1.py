@@ -54,3 +54,4 @@ def gcd(number1, number2):
             if number1 % i == 0 and number2 % i == 0:
                 x = i
         return x
+print(gcd(15,5))

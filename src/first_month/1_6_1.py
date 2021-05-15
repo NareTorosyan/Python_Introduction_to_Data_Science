@@ -124,11 +124,11 @@ class Rational:
                     x = i
             return x
 
+
     def normalize(self,numerator,denominator):
         x = self.gcd(numerator,denominator)
-        print(x)
         return numerator//x, denominator//x
-
+        print(self.gcd(10,2))
 
 obj = Rational(14,2)
 print(obj)
@@ -150,4 +150,3 @@ print(obj1<obj2)
 print(obj1>=obj2)
 print(obj1<=obj2)
 print(obj1**obj2)
-
