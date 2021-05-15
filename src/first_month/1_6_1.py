@@ -17,7 +17,7 @@ class Rational:
             if numerator<=0:
                raise RationalException("Numenator must be positive ", numerator)
             else:
-                numerator,denumerator=self.normalize(numerator,denominator)
+                numerator,denominator=self.normalize(numerator,denominator)
                 self.__numerator = numerator
                 self.__denominator = denominator
         except RationalException as error:
@@ -97,7 +97,7 @@ class Rational:
             me.print_obj()
 
     def get_denominator(self):
-        return self.__denumerator
+        return self.__denominator
 
     def set_denominator(self, other):
         try:
@@ -128,9 +128,9 @@ class Rational:
     def normalize(self,numerator,denominator):
         x = self.gcd(numerator,denominator)
         return numerator//x, denominator//x
-        print(self.gcd(10,2))
 
-obj = Rational(14,2)
+
+obj = Rational(30,5)
 print(obj)
 
 obj1 = Rational (3, 5)
