@@ -7,10 +7,10 @@ class Room:
         return f"{self.__type},{self.__count}"
 
     def get_type(self):
-        print(self.__type)
+       return self.__type
 
     def get_count(self):
-        print(self.__count)
+        return self.__count
 
     def reserve(self):
         r=5
@@ -39,14 +39,40 @@ class Hotel:
         self.__rooms = rooms
 
     def get_rating(self):
-        print(self.__rating)
+        return self.__rating
 
 
     def get_rooms(self):
-        print(self.__rooms)
+        return self.__rooms
 
 
 
-obj2=Hotel("Golden_Palace",4.8,5000,[Room("penthouse",6),Room("single",3),Room("double",15)])
+obj2=Hotel("Golden_Palace""",4.8,5000,[Room("penthouse",6),Room("single",3),Room("double",15)])
 obj2.get_rating()
 obj2.get_rooms()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
