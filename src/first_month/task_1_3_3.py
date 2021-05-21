@@ -5,8 +5,7 @@ def fact(n):
     if n == 1:
         return 1
     return n*fact(n-1)
-a = fact(8)
-print(a)
+
 
 #2 Write a Python function which returns the n-th element of the fibonacci series.
 def fib(n):
@@ -17,5 +16,10 @@ def fib(n):
     return fib(n - 1) + fib(n - 2)
 
 
-print(fib(4))
 
+def main():
+    print(fib(4))
+    print(fact(19))
+
+
+main()

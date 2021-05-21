@@ -134,6 +134,7 @@ obj = Rational(30,5)
 print(obj)
 
 obj1 = Rational (3, 5)
+obj1.set_denominator(10)
 obj2 = Rational (4, 3)
 obj3 = obj1+obj2
 obj4 = obj2-obj1
