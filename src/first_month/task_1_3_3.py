@@ -21,5 +21,3 @@ def main():
     print(fib(4))
     print(fact(19))
 
-
-main()
