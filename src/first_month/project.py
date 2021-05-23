@@ -111,7 +111,7 @@ class Hotel:
 obj1=Room("penthouse",8)
 print(obj1.get_type())
 print(obj1.get_count())
-print(obj1.reserve(10))
+print(obj1.reserve(5))
 print(obj1.checkout(1))
 
 obj2=Hotel("Golden_Palace",[Room("penthouse",3),Room("single",10),Room("double",15)])
@@ -120,7 +120,8 @@ print(obj2.get_rooms())
 print(obj2.rate(4))
 print(obj2.reserve("single",7))
 print(obj2.add(Room("penthouse",2)))
-print(obj2.remove(Room("double",2)))
+
+
 
 
 
