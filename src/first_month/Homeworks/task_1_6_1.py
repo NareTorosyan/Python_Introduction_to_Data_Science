@@ -129,18 +129,16 @@ class Rational:
         x = self.gcd(numerator,denominator)
         return numerator//x, denominator//x
 
-
-obj = Rational(30,5)
+def(main):
+    obj = Rational(30, 5)
+    obj1 = Rational(3, 5)
+    obj2 = Rational(4, 3)
+    obj3 = obj1 + obj2
+    obj4 = obj2 - obj1
+    obj5 = obj1 * obj2
+    obj6 = obj2 / obj1
+    obj11 = obj1 ** obj2
 print(obj)
-
-obj1 = Rational (3, 5)
-obj1.set_denominator(10)
-obj2 = Rational (4, 3)
-obj3 = obj1+obj2
-obj4 = obj2-obj1
-obj5 = obj1*obj2
-obj6 = obj2/obj1
-obj11 = obj1**obj2
 print(obj3)
 print(obj4)
 print(obj5)
@@ -151,3 +149,4 @@ print(obj1<obj2)
 print(obj1>=obj2)
 print(obj1<=obj2)
 print(obj1**obj2)
+print(obj1.set_denominator(10))
