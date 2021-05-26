@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="098d9223-7869-43d3-9689-1659f35c1bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/some_array.npy" beforeDir="false" afterPath="$PROJECT_DIR$/some_array.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +34,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\Python_Introduction_to_Data_Science\src\second_month\Other" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.task_2_2">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="second_month" />
@@ -43,7 +52,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\user\PycharmProjects\Python_Introduction_to_Data_Science\src\second_month\Other\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,13 +125,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
+          <url>file://$PROJECT_DIR$/Other/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/task_2_2.py</url>
-          <line>6</line>
+          <line>4</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
