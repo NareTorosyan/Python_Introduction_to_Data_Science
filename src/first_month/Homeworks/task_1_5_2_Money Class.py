@@ -8,16 +8,16 @@ class MoneyException(Exception):
 
 
 class Money:
-    def __init__(self, am, currency):
+    def __init__(self, amount, currency):
         try:
-            if type(am) != int:
-                raise MoneyException("Must be integer", am)
+            if type(amount) != int:
+                raise MoneyException("Must be integer", amount)
             if type(currency) != str:
                 raise MoneyException("Must be string", currency)
-            if am < 0:
-                raise MoneyException("Negative Value", am)
+            if amount < 0:
+                raise MoneyException("Negative Value", amount)
             else:
-                self.__amount = am
+                self.__amount = amount
                 self.__currency = currency
         except MoneyException as me:
             me.print_obj()
@@ -64,10 +64,10 @@ class Money:
         except MoneyException as me:
             me.print_obj()
 
-
-obj1 = Money(-100, "USD")
-obj2 = Money(20, "USD")
-obj3 = obj1 + obj2
-obj4 = obj1 - obj2
+def main():
+    obj1 = Money(-100, "USD")
+    obj2 = Money(20, "USD")
+    obj1 + obj2
+    obj4 = obj1 - obj2
 me.print_obj3()
 me.print_obj4()

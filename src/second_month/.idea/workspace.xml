@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="098d9223-7869-43d3-9689-1659f35c1bdf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Other/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/some_array.npy" beforeDir="false" afterPath="$PROJECT_DIR$/some_array.npy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_2_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_2_2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
