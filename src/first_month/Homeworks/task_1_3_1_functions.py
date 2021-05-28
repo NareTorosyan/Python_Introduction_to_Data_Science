@@ -58,3 +58,4 @@ print(palindrome(161))
 print(prime(15))
 print(perfect(134))
 print(gcd(15,5))
+

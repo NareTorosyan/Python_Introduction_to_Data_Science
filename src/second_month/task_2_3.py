@@ -7,7 +7,6 @@ def max_min(array):
 print(max_min(arr))
 
 #2Write a program to find maximum and minimum values of the second column of multidimensional NumPY massive
-
 arr = np.arange(1, 12, 2).reshape(2, 3)
 def max_min_by_2nd_column(array):
     return np.max(array[:,2]),np.min(array[:,2])

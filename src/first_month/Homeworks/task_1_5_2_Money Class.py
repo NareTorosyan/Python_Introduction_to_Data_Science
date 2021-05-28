@@ -64,10 +64,10 @@ class Money:
         except MoneyException as me:
             me.print_obj()
 
-def main():
-    obj1 = Money(-100, "USD")
-    obj2 = Money(20, "USD")
-    obj1 + obj2
-    obj4 = obj1 - obj2
+    def main():
+        obj1 = Money(-100, "USD")
+        obj2 = Money(20, "USD")
+        obj3 = obj1 + obj2
+        obj4 = obj1 - obj2
 me.print_obj3()
 me.print_obj4()
