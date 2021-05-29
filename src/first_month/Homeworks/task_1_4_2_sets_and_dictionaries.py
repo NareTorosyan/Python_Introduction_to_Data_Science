@@ -45,7 +45,7 @@ def sum(d1,d2):
 
 
  #7 Write a python program which create dict from string, where keys are letters of  string, values are counts of letters in string
-def new_dic(s):
+def new_dic_from_string(s):
     d = {}
     for i in range(0,len(s)):
         d[s[i]]=s.count(s[i])
@@ -57,13 +57,14 @@ def main():
     s2 = {"D": 5, "E": 10, "F": 25}
     l1 = [1, 2, 5, 6, 7]
     l2 = ["A", "B", "C", "D", "E"]
-print(new_value("A", 8, dic))
-print(concat(s1,s2))
-print(cubes(10))
-print(new_dic(l1,l2))
-print(max_min(s1))
-print(sum(s1,s2))
-print(new_dic("letter"))
+    print(new_value("A", 8, dic))
+    print(concat(s1,s2))
+    print(cubes(10))
+    print(new_dic(l1,l2))
+    print(max_min(s1))
+    print(sum(s1,s2))
+    print(new_dic_from_string("spring"))
+main()
 
 
 

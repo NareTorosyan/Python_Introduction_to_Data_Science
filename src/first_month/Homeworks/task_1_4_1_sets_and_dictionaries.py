@@ -6,8 +6,6 @@ def remove_duplicates(l):
 
 
 #2 Write a python program which returns common elements of 2 lists.
-l1 = [1,2,2,3,4,5]
-l2 = [1,2,5,6,7,8]
 def common_element(l1,l2):
     s1 = set(l1)
     s2 = set(l2)
@@ -15,8 +13,6 @@ def common_element(l1,l2):
 
 
 #3 Write a python program which return elements which are in first list but not in second
-l1 = [1,2,2,3,4,5]
-l2 = [1,2,5,6,7,8]
 def dif(l1,l2):
     s1 = set(l1)
     s2 = set(l2)
@@ -24,8 +20,6 @@ def dif(l1,l2):
 
 
 #4 Write a python program which return elements are or in first list, either in second, but not in both
-l1 = [1,2,2,3,4,5]
-l2 = [1,2,5,6,7,8]
 def merge(l1,l2):
     s1 = set(l1)
     s2 = set(l2)
@@ -33,8 +27,6 @@ def merge(l1,l2):
 
 
 #5 Write a python program which return elements which are or in first, either in second, or in both
-l1 = [1,2,2,3,4,5]
-l2 = [1,2,5,6,7,8]
 def total(l1,l2):
     s1 = set(l1)
     s2 = set(l2)
@@ -60,11 +52,11 @@ def main():
     l1 = [1, 2, 3, 3, 3, 4, 5]
     l2 = [0, 2, 7, 9, 9, 4, 5]
     sample_set = {3, 5, 7, 11, 13}
-      print(remove_duplicates(l1))
-      print(common_element(l1, l2))
-      print(dif(l1, l2))
-      print(merge(l1, l2))
-      print(total(l1, l2))
-      print(remove(sample_set,11))
-      print(cub(sample_set))
+    print(remove_duplicates(l1))
+    print(common_element(l1, l2))
+    print(dif(l1, l2))
+    print(merge(l1, l2))
+    print(total(l1, l2))
+    print(remove(sample_set,11))
+    print(cub(sample_set))
 main()
