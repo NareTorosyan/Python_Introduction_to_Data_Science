@@ -115,7 +115,7 @@ def main():
     print(obj1.get_type())
     print(obj1.get_count())
 
-    obj2=Hotel("Golden_Palace",[Room("penthouse",3),Room("single",10),Room("double",7)])
+    obj2=Hotel("Mariot",[Room("penthouse",3),Room("single",10),Room("double",7)])
     obj2.rate(5)
     obj2.reserve("single",7)
     obj2.add(Room("deluxe",3))
