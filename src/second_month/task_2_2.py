@@ -29,9 +29,10 @@ print(create_file(arr))
 def main():
     x1 = np.array([[2, 2, 6], [1, 9, 10]])
     y1 = np.array([[2, 2], [1, 4], [5, 6]])
-print(mul(x1,y1))
-print(det(x1))
-print(sum_of_diagonal_elements(x1))
-print(inverse_matrix(x1))
+    print(mul(x1,y1))
+    print(det(x1))
+    print(sum_of_diagonal_elements(x1))
+    print(inverse_matrix(x1))
+main()
 
 

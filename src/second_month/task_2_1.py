@@ -25,3 +25,4 @@ def main():
     print(create(2,10))
     print(update(10, 5, 8))
     print(check(np.array([1, 2, 3, 4, 7, 8]), np.array([4, 7, 1])))
+main()

@@ -94,7 +94,7 @@ class Hotel:
             if type(room) != Room:
                 raise RoomException("Rating must be integer", room)
             else:
-                self.__rooms.pop(room)
+                self.__rooms.remove(room)
         except RoomException as error:
             error.print_obj()
 
@@ -108,20 +108,21 @@ class Hotel:
             if i.get_type() == variety:
                 i.checkout(count)
 
-obj1=Room("penthouse",8)
-obj1.reserve(5)
-obj1.checkout(1)
-print(obj1.get_type())
-print(obj1.get_count())
+def main():
+    obj1=Room("penthouse",8)
+    obj1.reserve(5)
+    obj1.checkout(1)
+    print(obj1.get_type())
+    print(obj1.get_count())
 
-obj2=Hotel("Golden_Palace",[Room("penthouse",3),Room("single",10),Room("double",7)])
-obj2.rate(5)
-obj2.reserve("single",7)
-obj2.add(Room("deluxe",3))
-obj2.remove(Room("single",3))
-print(obj2.get_rating())
-print(obj2.get_rooms())
-
+    obj2=Hotel("Golden_Palace",[Room("penthouse",3),Room("single",10),Room("double",7)])
+    obj2.rate(5)
+    obj2.reserve("single",7)
+    obj2.add(Room("deluxe",3))
+    obj2.add(Room("single",1))
+    print(obj2.get_rating())
+    print(obj2.get_rooms())
+main()
 
 
 
