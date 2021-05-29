@@ -7,7 +7,8 @@ def divider(a, b):
 
 
 # 2 Write a Python function, which gets a number, and return True if that number is palindrome, otherwise False
-def palindrome(number):
+def palindrome(s):
+    s=str(s)
     if s == s[::-1]:
         return True
     else:
@@ -58,8 +59,7 @@ def main():
        print(prime(15))
        print(perfect(134))
        print(gcd(15, 5))
-
-
+main()
 
 
 

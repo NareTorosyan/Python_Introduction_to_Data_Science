@@ -91,5 +91,5 @@ def main():
        print(digit_sum(12))
        print(robot(5,6,"left","up"))
        print(next_smallest_palindrome(119))
-
+main()
 
