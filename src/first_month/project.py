@@ -12,6 +12,8 @@ class Room:
         try:
             if type(count) != int:
                raise RoomException("Must be integer",count)
+            if type(variety) != str:
+               raise RoomException("Must be string",variety)
             if count<=0:
                raise RoomException("Count must be positive ",count)
             else:
@@ -32,23 +34,52 @@ class Room:
 
     def reserve(self,count):
         try:
-            if count>self.__count:
-                raise RoomException("We have no available count of these rooms",count)
+            if type(count) != int:
+                raise RoomException("Must be integer",count)
+            if count < 0:
+                raise RoomException("Number of rooms must be positive", count)
+            if count > self.__count:
+                raise RoomException("We have no available count of these rooms", count)
             else:
                 self.__count=self.__count-count
         except RoomException as error:
             error.print_obj()
 
     def checkout(self, count):
-        self.__count = self.__count + count
+        try:
+            if type(count) != int:
+                raise RoomException("Must be integer", count)
+            if count < 0:
+                raise RoomException("Number of rooms must be positive", count)
+            else:
+                self.__count = self.__count + count
+        except RoomException as error:
+            error.print_obj()
 
+class HotelException(Exception):
+    def __init__(self, message, value):
+        self.__message = message
+        self.__value = value
+
+
+    def print_obj(self):
+        print(self.__message, self.__value)
 
 class Hotel:
     def __init__(self, name, rooms):
-        self.__name = name
-        self.__rating = 0
-        self.__rate_count = 0
-        self.__rooms = rooms
+        try:
+            if type(name) != str:
+               raise HotelException("Must be string", name)
+            if type(rooms) != list:
+                raise HotelException("Must be list", name)
+            else:
+                self.__name = name
+                self.__rating = 0
+                self.__rate_count = 0
+                self.__rooms = rooms
+        except HotelException as error:
+            error.print_obj()
+
 
     def __repr__(self):
         return f"{self.__name},{self.__rooms}"
@@ -109,9 +140,10 @@ class Hotel:
                 i.checkout(count)
 
 def main():
-    obj1=Room("penthouse",8)
+    obj1=Room("single",10)
     obj1.reserve(5)
-    obj1.checkout(1)
+    obj1.checkout(3)
+    print(obj1)
     print(obj1.get_type())
     print(obj1.get_count())
 
