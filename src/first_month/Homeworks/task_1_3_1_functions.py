@@ -1,10 +1,10 @@
-
 # 1 Write a Python function, which gets 2 numbers, and return True if the second number is first number divider, otherwise False.
-def divider(a,b):
-    if b % a== 0:
+def divider(a, b):
+    if b % a == 0:
         return True
     else:
         return False
+
 
 # 2 Write a Python function, which gets a number, and return True if that number is palindrome, otherwise False
 def palindrome(number):
@@ -52,10 +52,35 @@ def gcd(number1, number2):
 
 
 def main():
-print(divider(10,5))
-print(divider(10,5))
-print(palindrome(161))
-print(prime(15))
-print(perfect(134))
-print(gcd(15,5))
+       print(divider(10, 5))
+       print(divider(10, 5))
+       print(palindrome(161))
+       print(prime(15))
+       print(perfect(134))
+       print(gcd(15, 5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

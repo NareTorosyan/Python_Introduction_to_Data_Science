@@ -1,4 +1,4 @@
-from Homeworks.task_1_3_1_functions import gcd
+from task_1_3_1_functions import gcd
 
 #1 Write a Python function, which Implements the Euler function.
 #Euler function is return a count of numbers not great than N, which are mutually simple with N.
@@ -86,10 +86,10 @@ def next_smallest_palindrome(x):
 
 
 def main():
-print(Euler(6))
-print(is_lucky_ticket(132))
-print(digit_sum(12))
-print(robot(5,6,"left","up"))
-print(next_smallest_palindrome(119))
+       print(Euler(6))
+       print(is_lucky_ticket(132))
+       print(digit_sum(12))
+       print(robot(5,6,"left","up"))
+       print(next_smallest_palindrome(119))
 
 

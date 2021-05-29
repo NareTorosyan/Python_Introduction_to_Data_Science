@@ -20,7 +20,7 @@ def inverse_matrix(array):
 
 
 #5Write a NumPy program to generate matrix and write it to a file, then again read from file that matrix.
-arr = np.arange(1, 12, 2).reshape(2, 3)
+arr= np.random.randint(5, size=(2,4))
 def create_file(array):
     np.save("some_array",array)
     return np.load("some_array.npy")

@@ -59,11 +59,11 @@ def cub(s):
 def main():
     l1 = [1, 2, 3, 3, 3, 4, 5]
     l2 = [0, 2, 7, 9, 9, 4, 5]
-    sample_set = {3, 5, 7, 11, 13}
-print(remove_duplicates(l1))
-print(common_element(l1, l2))
-print(dif(l1, l2))
-print(merge(l1, l2))
-print(total(l1, l2))
-print(remove(sample_set,11))
-print(cub(sample_set))
+sample_set = {3, 5, 7, 11, 13}
+      print(remove_duplicates(l1))
+      print(common_element(l1, l2))
+      print(dif(l1, l2))
+      print(merge(l1, l2))
+      print(total(l1, l2))
+      print(remove(sample_set,11))
+      print(cub(sample_set))
