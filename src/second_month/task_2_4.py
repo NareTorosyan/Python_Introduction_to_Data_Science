@@ -21,7 +21,7 @@ def sort(Series):
     return Series.sort_values()
 
 
-#4Write a Pandas program to convert the first column of a DataFrame as a Series
+#5Write a Pandas program to convert the first column of a DataFrame as a Series
 def first_col_to_df(dataframe):
     return pd.Series(dataframe.iloc[:,0])
 
