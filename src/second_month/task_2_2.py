@@ -1,5 +1,5 @@
 import numpy as np
-from numpy.linalg import det
+from numpy.linalg import det,inv
 #1 Write a NumPy program to compute the multiplication of two given matrixes
 def mul(x,y):
     return x.dot(y)
@@ -24,7 +24,6 @@ def inverse_matrix(array):
 def create_file(array):
     np.save("some_array",array)
     return np.load("some_array.npy")
-
 
 def main():
     arr = np.random.randint(5, size=(2, 4))
