@@ -58,3 +58,4 @@ def main():
     print(sum(exam_data_dataframe))
 main()
 
+zf = zipfile.ZipFile(r'C:\Users\user\Desktop/data.csv.zip')
