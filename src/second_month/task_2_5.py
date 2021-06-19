@@ -1,8 +1,12 @@
 
 import pandas as pd
 import csv
-with open(r'C:\Users\user\Desktop/data.csv') as file:
-    reader=csv.reader(file)
-    for row in reader:
-        print(row)
+file = open(r'C:\Users\user\Desktop/data.csv')
+lines=file.readlines()
+for index, line in enumerate(lines):
+    print("Line {}: {}".format(index,line.strip()))
+text_data=[]
+def datacleaner(list):
+    for i in list:
+        print(list[i].replace("+",""))
 
