@@ -6,9 +6,14 @@ lines=file.readlines()
 for line in lines:
     clean_row = line.replace("+", "")
 
-with open(r'C:\Users\user\Desktop/new.csv',"w") as f:
-    writer=csv.writer(f)
-    writer.writerow(clean_row)
+for clean_row in file:
+    with open(r'C:\Users\user\Desktop/new.csv', "w") as f:
+        writer = csv.writer(f, delimiter=",")
+        writer.writerow(clean_row)
+
+
+
+
 
 
 
