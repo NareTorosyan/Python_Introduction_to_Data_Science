@@ -17,7 +17,7 @@ for clean_row in file:
 new_file = open(r'C:\Users\user\Desktop/new.csv')
 new_lines=new_file.readlines()
 
-
+findata
 
 
 
